@@ -10,6 +10,16 @@ const slideshows = document.getElementsByClassName('content__element--slideshow'
 
 
 
+// Toggle between loading page and everything else
+const toggleLoadingPage = (showLoadingPage) => {
+    header.style.display = showLoadingPage ? 'none' : 'flex'
+    content.style.display = showLoadingPage ? 'none' : 'flex'
+    footer.style.display = showLoadingPage ? 'none' : 'flex'
+
+    loader.style.display = showLoadingPage ? 'flex' : 'none'
+}
+
+
 // Create the left side of page with title, paragraph, and github link
 const createLeftDiv = (picture) => {
     // CREATE DIV
@@ -73,6 +83,9 @@ const createSlideshow = (picture, slideshowNum) => {
 const createContent = () => {
     let slideshowNum = 1
 
+    // Show loading page until all images loaded
+    toggleLoadingPage(true)
+
     pictures.forEach((picture, index) => {
         // CREATE DIV
         const div = document.createElement('div')
@@ -89,6 +102,11 @@ const createContent = () => {
 
         // INCREASE COUNT
         slideshowNum += 1
+
+        // IF EVERYTHING ADDED, HIDE LOADING PAGE
+        if (index === pictures.length - 1) {
+            toggleLoadingPage(false)
+        }
     })
 }
 
