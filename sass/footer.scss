@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+
+    &__title {
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+        margin-top: 2.25rem;
+        margin-bottom: 6rem;
+        text-align: center;
+
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.5rem;
+        }
+
+        
+        &--link {
+            color: $color-red;
+            text-decoration: none;
+
+
+            &:hover,
+            &:active {
+                filter: brightness(110%);
+                text-decoration: underline;
+            }
+        }
+    }
+}

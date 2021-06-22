@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+// COLOR VARIABLES
+$color-blue-light: #B8D8D8;
+$color-blue: #7A9E9F;
+$color-blue-dark: #4F6367;
+$color-blue-dark-2: rgb(44, 99, 110);
+// $color-beige: #EEF5DB;
+$color-beige: #eef5dba8;
+$color-red: #FE5F55;
+
+
+
+
+// BREAKPOINT VARIABLES
+$bp-large: 62.5em;   // 1000px
+$bp-small: 31.25em;  // 500px
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Bebas Neue, sans-serif;
+    background-color: $color-beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
