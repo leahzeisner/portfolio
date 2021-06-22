@@ -9,7 +9,6 @@ const slideshows = document.getElementsByClassName('content__element--slideshow'
 
 
 
-
 // Toggle between loading page and everything else
 const toggleLoadingPage = (showLoadingPage) => {
     header.style.display = showLoadingPage ? 'none' : 'flex'

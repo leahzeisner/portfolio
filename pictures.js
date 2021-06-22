@@ -55,6 +55,14 @@ const pictures = [
         pictureNames: ["chat-app-pic-1.png", "chat-app-pic-2.png"], 
         activeIndex: 0 
     },
+    {
+        title: 'NASA A.P.O.D',
+        paragraph: "NASA Astronomy Picture of the Day. This website uses NASA's API to collect their Astronomy Pictures of the Day and displays them as an infinite scroll. It uses lazy loading to speed up the website. It includes the photo, the photographer, a description, and a link to the photo on NASA's website. You can also add pictures to your favorites to view again.",
+        link: 'https://leahzeisner.github.io/NASA-APOD/',
+        githubLink: 'https://github.com/leahzeisner/NASA-APOD',
+        pictureNames: ["nasa-pic.png"],
+        activeIndex: 0
+    },
     { 
         title: 'Recipe & Shopping List App', 
         paragraph: 'Another Recipe App because you can never have too many! This one was made using Angular CLI and also incorporates a shopping list. You can keep track of your recipes and ingredients, as well as add ingredients from a recipe to your shopping list. All data is stored in a Firebase Database and users are authenticated with a username and password.',
@@ -117,6 +125,14 @@ const pictures = [
         link: "https://leahzeisner.github.io/music-player/", 
         githubLink: 'https://github.com/leahzeisner/music-player',
         pictureNames: ["music-player-pic.png"], 
+        activeIndex: 0 
+    },
+    { 
+        title: 'Video Player', 
+        paragraph: 'Similar to the Music Player, this project was made using HTML, CSS, and Javascript. It again uses calculations to show the progress bar and time of the current video. You can play and pause, change the volume and playback speed, and toggle in and out of fullscreen mode.',
+        link: "https://leahzeisner.github.io/video-player/", 
+        githubLink: 'https://github.com/leahzeisner/video-player',
+        pictureNames: ["video-player-pic.png"], 
         activeIndex: 0 
     },
     { 
