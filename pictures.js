@@ -97,7 +97,7 @@ const pictures = [
     },
     { 
         title: 'Infinite Picture Scroll', 
-        paragraph: 'This website fetches 10 random photos at a time from Unsplash.com. It implements an infinite scroll functionality by calculating how much the user has scrolled. When the user is close to the bottom, it fetches 10 more random photos. This speeds up the website and creates an infinite scroll of some pretty aesthetic photos Each picture is also a link back to the source on Unsplash.com, where you can view the photographer and similar photos.',
+        paragraph: 'This website fetches 30 random photos at a time from Unsplash.com. It implements an infinite scroll functionality by calculating how much the user has scrolled. When the user is close to the bottom, it fetches 30 more random photos. This speeds up the website and creates an infinite scroll of some pretty aesthetic photos Each picture is also a link back to the source on Unsplash.com, where you can view the photographer and similar photos.',
         link: "https://github.com/leahzeisner/infinte-scroll",            // API KEY
         githubLink: 'https://github.com/leahzeisner/infinte-scroll',
         pictureNames: ["infinite-scroll-pic.png"], 

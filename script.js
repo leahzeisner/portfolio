@@ -39,6 +39,7 @@ const createLeftDiv = (picture) => {
     const github = document.createElement('a')
     github.classList.add('content__element--text--githubLink')
     github.href = picture.githubLink
+    github.target = '_blank'
     github.textContent = 'Source Code on Github'
 
     // APPEND TEXT TO DIV AND RETURN
@@ -58,6 +59,7 @@ const createSlideshow = (picture, slideshowNum) => {
         // LINK
         const link = document.createElement('a')
         link.href = picture.link
+        link.target = '_blank'
 
         // IMAGE
         const image = document.createElement('img')
